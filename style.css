@@ -1,3 +1,55 @@
 *{box-sizing:border-box}body{margin:0;background:#080808;color:#fff;font-family:Arial,sans-serif}header{height:72px;padding:0 6%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #262626;position:sticky;top:0;background:#080808ee;z-index:10}.hero{min-height:480px;padding:8% 7%;display:flex;flex-direction:column;justify-content:center;background:radial-gradient(circle at 75%,#333,#090909 55%)}h1{font-size:clamp(48px,7vw,90px);line-height:.88;margin:16px 0}.hero a,.view{background:#fff;color:#000;padding:14px 22px;text-decoration:none;font-weight:800;border:1px solid #fff}.benefits{text-align:center;padding:20px;border-block:1px solid #222}#catalogo{padding:50px 5%}#grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}.card{background:#111;border:1px solid #292929;padding:14px}.gallery{position:relative;background:#eee;aspect-ratio:1/1}.gallery img{width:100%;height:100%;object-fit:contain;cursor:pointer}.arrow{position:absolute;top:50%;transform:translateY(-50%);background:#090909cc;color:#fff;border:1px solid #777;width:38px;height:38px}.prev{left:8px}.next{right:8px}.count{position:absolute;right:8px;bottom:8px;background:#090909cc;padding:5px 8px}.brand{font-size:20px;margin:15px 0 5px}.price{font-weight:800}.sizes{display:flex;flex-wrap:wrap;gap:7px;margin:12px 0}.size{background:transparent;color:#ddd;border:1px solid #555;min-width:38px;height:36px}.size:hover,.size.selected{border-color:#fff;box-shadow:0 0 0 1px #fff inset}.view{width:100%;cursor:pointer}.warning{font-size:12px;min-height:16px;margin:7px 0}@media(max-width:1100px){#grid{grid-template-columns:repeat(3,1fr)}}@media(max-width:800px){#grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:560px){header span{display:none}#catalogo{padding:35px 14px}#grid{grid-template-columns:1fr;gap:24px}.gallery{aspect-ratio:4/3}.size{min-width:42px;height:40px}}
-.view-main{display:block}
-.view-sub{display:block;font-size:11px;font-weight:400;margin-top:3px;opacity:.72;letter-spacing:.2px}
+/* AJUSTES VISUALES FINALES */
+
+/* Hero: botón compacto, minimalista y no intrusivo */
+.hero a{
+  align-self:flex-start;
+  width:auto;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:11px 18px;
+  font-size:12px;
+  letter-spacing:1.2px;
+  border:1px solid rgba(255,255,255,.72);
+  background:transparent;
+  color:#fff;
+  transition:background .22s ease,color .22s ease,border-color .22s ease,transform .22s ease;
+}
+.hero a:hover{
+  background:#fff;
+  color:#080808;
+  border-color:#fff;
+  transform:translateY(-1px);
+}
+
+/* Tarjetas: contorno más visible y elegante */
+.card{
+  border:1px solid rgba(255,255,255,.28);
+  box-shadow:0 0 0 1px rgba(255,255,255,.025) inset;
+  transition:border-color .22s ease,box-shadow .22s ease,transform .22s ease;
+}
+.card:hover{
+  border-color:rgba(255,255,255,.72);
+  box-shadow:0 12px 30px rgba(0,0,0,.35);
+  transform:translateY(-2px);
+}
+
+/* Botón principal/WhatsApp: contorno definido */
+.view{
+  border:1px solid rgba(255,255,255,.9);
+  background:transparent;
+  color:#fff;
+  transition:background .22s ease,color .22s ease,box-shadow .22s ease;
+}
+.view:hover{
+  background:#fff;
+  color:#080808;
+  box-shadow:0 0 0 1px #fff;
+}
+.view-sub{opacity:.78}
+
+@media(max-width:560px){
+  .card{border-color:rgba(255,255,255,.36)}
+  .hero a{padding:10px 16px;font-size:11px}
+}

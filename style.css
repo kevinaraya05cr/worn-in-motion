@@ -77,6 +77,3 @@
   border-color:#25D366;
   box-shadow:0 0 0 1px #25D366,0 0 14px rgba(37,211,102,.24);
 }
-
-/* OPTIMIZACION DE RENDIMIENTO SIN CAMBIAR EL DISEÑO */
-.card{content-visibility:auto;contain-intrinsic-size:620px}.gallery img{display:block;backface-visibility:hidden}@media (hover:none){.card:hover{transform:none;box-shadow:0 0 0 1px rgba(255,255,255,.025) inset}}

@@ -4,7 +4,7 @@ function card(p) {
   return `
     <article class="card" data-id="${p.id}" data-img="0">
       <div class="gallery">
-        <img src="${p.images[0]}" onclick="change(${p.id},1)">
+        <img src="${p.images[0]}" loading="lazy" decoding="async" fetchpriority="low" width="900" height="900" onclick="change(${p.id},1)">
         <button class="arrow prev" onclick="change(${p.id},-1)">‹</button>
         <button class="arrow next" onclick="change(${p.id},1)">›</button>
         <span class="count">1/${p.images.length}</span>

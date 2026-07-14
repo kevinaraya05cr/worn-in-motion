@@ -1,1 +1,42 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Worn in Motion</title><link rel="stylesheet" href="style.css"></head><body><header><b>WORN IN MOTION</b><span>COLECCIÓN　CONTACTO</span></header><main><section class="hero sneakers-hero"><small>NUEVA COLECCIÓN</small><h1>SNEAKERS</h1><div class="hero-shoes"><article class="hero-shoe-card"><img src="images/tenis-023.png" alt="Nike negra"><span>NIKE</span></article><article class="hero-shoe-card"><img src="images/tenis-003.png" alt="New Balance blanca"><span>NEW BALANCE</span></article><article class="hero-shoe-card"><img src="images/tenis-019.png" alt="New Balance gris con blanco"><span>NEW BALANCE</span></article></div><a class="hero-collection-btn" href="#catalogo">VER COLECCIÓN →</a></section><section class="benefits">ENVÍOS A TODO CR · PAGO SEGURO · ATENCIÓN PERSONALIZADA</section><section id="catalogo"><h2>PRODUCTOS DESTACADOS</h2><div id="grid"></div></section></main><footer><b>WORN IN MOTION</b><p>@kevinarayacr · kevin_araya05@hotmail.com</p></footer><script src="products.js"></script><script src="script.js"></script></body></html>
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Worn in Motion</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<b>WORN IN MOTION</b>
+<span>
+<a href="#catalogo" onclick="irASeccion('catalogo'); return false;">COLECCIÓN</a>
+　
+<a href="#contacto" onclick="irASeccion('contacto'); return false;">CONTACTO</a>
+</span>
+</header>
+<main>
+<section class="hero sneakers-hero">
+<small>NUEVA COLECCIÓN</small>
+<h1>SNEAKERS</h1>
+<div class="hero-shoes">
+<article class="hero-shoe-card"><img src="images/tenis-001.png" alt="Nike negra"><span>NIKE</span></article>
+<article class="hero-shoe-card"><img src="images/tenis-003.png" alt="New Balance blanca"><span>NEW BALANCE</span></article>
+<article class="hero-shoe-card"><img src="images/tenis-019.png" alt="New Balance gris con blanco"><span>NEW BALANCE</span></article>
+</div>
+<a class="hero-collection-btn" href="#catalogo" onclick="irASeccion('catalogo'); return false;">VER COLECCIÓN →</a>
+</section>
+<section class="benefits">ENVÍOS A TODO CR · PAGO SEGURO · ATENCIÓN PERSONALIZADA</section>
+<section id="catalogo"><h2>PRODUCTOS DESTACADOS</h2><div id="grid"></div></section>
+</main>
+<footer id="contacto"><b>WORN IN MOTION</b><p>@kevinarayacr · kevin_araya05@hotmail.com</p></footer>
+<script src="products.js"></script>
+<script src="script.js"></script>
+<script>
+function irASeccion(id){
+  const seccion=document.getElementById(id);
+  if(seccion){seccion.scrollIntoView({behavior:"smooth",block:"start"});}
+}
+</script>
+</body>
+</html>

@@ -120,59 +120,70 @@
 @media(max-width:900px){.how-buy-grid{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:560px){.how-buy{padding:38px 14px}.how-buy-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory}.how-buy-grid article{min-width:82%;scroll-snap-align:start}.store-footer{padding:44px 18px 20px}.footer-grid{grid-template-columns:1fr;gap:34px}.footer-grid h2{font-size:54px}.footer-copy{text-align:left;font-size:13px}}
 
-/* HERO FINAL: MAS COMPACTO Y HORIZONTAL */
-.sneakers-hero{padding-top:34px;padding-bottom:32px}
-.sneakers-hero h1{margin-bottom:16px}
-.hero-shoes{max-width:1050px;margin:0 auto;gap:14px}
-.hero-shoe-card{padding:8px}
-.hero-shoe-card img{height:150px;aspect-ratio:16/9;object-fit:contain}
-.hero-shoe-card span{padding:8px 2px 2px}
-.sneakers-hero .hero-collection-btn{margin-top:18px}
-@media(max-width:800px){
-  .hero-shoe-card img{height:125px}
-}
-@media(max-width:560px){
-  .hero-shoes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));overflow:visible;gap:6px}
-  .hero-shoe-card{min-width:0;padding:4px}
-  .hero-shoe-card img{height:92px;aspect-ratio:16/9}
-  .hero-shoe-card span{font-size:9px;padding-top:6px}
-}
 
-/* CORRECCION DEFINITIVA HERO: 3 TARJETAS HORIZONTALES */
+/* HERO SNEAKERS LIMPIO: 3 TARJETAS EN UNA FILA */
+.sneakers-hero{
+  min-height:auto;
+  padding:34px 5% 32px;
+  display:block;
+  background:radial-gradient(circle at 50% 30%,#303030 0,#171717 38%,#090909 76%);
+}
+.sneakers-hero h1{
+  margin:4px 0 24px;
+  font-size:clamp(54px,8vw,108px);
+  line-height:.82;
+  letter-spacing:-4px;
+}
 .sneakers-hero .hero-shoes{
-  display:grid !important;
-  grid-template-columns:repeat(3,minmax(0,1fr)) !important;
-  gap:18px !important;
-  width:100% !important;
-  max-width:1050px !important;
-  margin:0 auto !important;
-  overflow:visible !important;
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:18px;
+  width:100%;
+  max-width:1050px;
+  margin:0 auto;
 }
 .sneakers-hero .hero-shoe-card{
-  display:flex !important;
-  flex-direction:column !important;
-  width:auto !important;
-  min-width:0 !important;
-  padding:12px !important;
-  box-sizing:border-box !important;
+  display:flex;
+  flex-direction:column;
+  min-width:0;
+  padding:12px;
+  margin:0;
+  background:#111;
+  border:1px solid rgba(255,255,255,.28);
+  overflow:hidden;
 }
 .sneakers-hero .hero-shoe-card img{
-  display:block !important;
-  width:100% !important;
-  height:220px !important;
-  aspect-ratio:auto !important;
-  object-fit:contain !important;
+  display:block;
+  width:100%;
+  height:220px;
+  object-fit:contain;
+  background:#eee;
 }
 .sneakers-hero .hero-shoe-card span{
-  display:block !important;
-  padding:10px 2px 2px !important;
+  display:block;
+  padding:12px 2px 2px;
+  font-size:13px;
+  font-weight:800;
+  letter-spacing:1px;
+}
+.sneakers-hero .hero-collection-btn{
+  margin-top:24px;
+  display:inline-flex;
+}
+@media(max-width:800px){
+  .sneakers-hero .hero-shoes{gap:8px}
+  .sneakers-hero .hero-shoe-card{padding:6px}
+  .sneakers-hero .hero-shoe-card img{height:150px}
+  .sneakers-hero .hero-shoe-card span{font-size:10px}
 }
 @media(max-width:560px){
+  .sneakers-hero{padding:38px 14px 34px}
+  .sneakers-hero h1{font-size:clamp(48px,17vw,76px);letter-spacing:-3px}
   .sneakers-hero .hero-shoes{
-    grid-template-columns:repeat(3,minmax(0,1fr)) !important;
-    gap:6px !important;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:6px;
   }
-  .sneakers-hero .hero-shoe-card{padding:5px !important}
-  .sneakers-hero .hero-shoe-card img{height:100px !important}
-  .sneakers-hero .hero-shoe-card span{font-size:9px !important}
+  .sneakers-hero .hero-shoe-card{padding:5px}
+  .sneakers-hero .hero-shoe-card img{height:100px}
+  .sneakers-hero .hero-shoe-card span{font-size:9px;padding-top:7px}
 }

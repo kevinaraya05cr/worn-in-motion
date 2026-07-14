@@ -206,3 +206,24 @@
 .social-link strong{font-size:14px}
 .social-link small{font-size:12px;color:#aaa}
 .social-link:hover .social-icon,.social-link:focus .social-icon{border-color:#25D366;box-shadow:0 0 12px rgba(37,211,102,.22)}
+
+/* BARRA DE DESPLAZAMIENTO WORN IN MOTION */
+html{
+  scrollbar-width:auto;
+  scrollbar-color:#9a9a9a #111;
+}
+::-webkit-scrollbar{width:14px}
+::-webkit-scrollbar-track{
+  background:#111;
+  border-left:1px solid #292929;
+}
+::-webkit-scrollbar-thumb{
+  background:#9a9a9a;
+  border:3px solid #111;
+  border-radius:999px;
+  min-height:48px;
+}
+::-webkit-scrollbar-thumb:hover,
+::-webkit-scrollbar-thumb:active{
+  background:#25D366;
+}

@@ -9,11 +9,7 @@
 <body>
 <header>
 <b>WORN IN MOTION</b>
-<span>
-<a href="#catalogo" onclick="irASeccion('catalogo'); return false;">COLECCIÓN</a>
-　
-<a href="#contacto" onclick="irASeccion('contacto'); return false;">CONTACTO</a>
-</span>
+<a class="contact-btn" href="#contacto" onclick="irASeccion('contacto'); return false;">CONTACTO</a>
 </header>
 <main>
 <section class="hero sneakers-hero">
@@ -29,7 +25,24 @@
 <section class="benefits">ENVÍOS A TODO CR · PAGO SEGURO · ATENCIÓN PERSONALIZADA</section>
 <section id="catalogo"><h2>PRODUCTOS DESTACADOS</h2><div id="grid"></div></section>
 </main>
-<footer id="contacto"><b>WORN IN MOTION</b><p>@kevinarayacr · kevin_araya05@hotmail.com</p></footer>
+<section id="como-comprar" class="how-buy">
+<h2>CÓMO COMPRAR</h2>
+<div class="how-buy-grid">
+<article><strong>1. ELIGE TU PRODUCTO</strong><p>Selecciona el modelo y la talla.</p></article>
+<article><strong>2. ESCRÍBENOS POR WHATSAPP</strong><p>Haz clic en el botón y envíanos tu consulta.</p></article>
+<article><strong>3. CONFIRMAMOS TU PEDIDO</strong><p>Confirmamos disponibilidad, precio y método de pago.</p></article>
+<article><strong>4. RECIBE TU PEDIDO</strong><p>Envíos a todo Costa Rica de forma rápida y segura.</p></article>
+</div>
+</section>
+<footer id="contacto" class="store-footer">
+<div class="footer-grid">
+<section class="footer-brand"><h2>WIM</h2><b>WORN IN MOTION</b><p>Para cada paso, cada ensayo y cada escenario. Hechos para moverte, elegidos para acompañarte. No solo los vendo: camino con ellos, ensayo con ellos, bailo con ellos y los llevo al escenario. Kilómetros de uso real respaldan mi elección. Worn in Motion nace de la experiencia de vivir siempre en movimiento.</p></section>
+<nav><h3>ENLACES</h3><a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">› Inicio</a><a href="#catalogo" onclick="irASeccion('catalogo');return false;">› Colección</a><a href="#como-comprar" onclick="irASeccion('como-comprar');return false;">› Cómo comprar</a><a href="#contacto">› Contacto</a></nav>
+<section><h3>CONTACTO</h3><a href="https://wa.me/50686243479">WhatsApp · 8624 3479</a><a href="https://www.instagram.com/kevinarayacr/">Instagram · @Kevinarayacr</a><a href="mailto:kevin_araya05@hotmail.com">kevin_araya05@hotmail.com</a><p>San Ramón, Costa Rica</p></section>
+<section><h3>SÍGUENOS</h3><a href="https://www.instagram.com/kevinarayacr/">Instagram</a><p>TikTok · YouTube</p></section>
+</div>
+<div class="footer-copy">© 2026 Worn in Motion. Todos los derechos reservados.</div>
+</footer>
 <script src="products.js"></script>
 <script src="script.js"></script>
 <script>

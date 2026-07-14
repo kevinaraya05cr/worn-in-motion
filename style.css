@@ -78,4 +78,44 @@
   box-shadow:0 0 0 1px #25D366,0 0 14px rgba(37,211,102,.24);
 }
 
-html{scroll-behavior:smooth}.sneakers-hero{min-height:auto;padding:52px 5% 44px;display:block;background:radial-gradient(circle at 50% 30%,#303030 0,#171717 38%,#090909 76%)}.sneakers-hero h1{margin:4px 0 24px;font-size:clamp(54px,8vw,108px);line-height:.82;letter-spacing:-4px}.hero-shoes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.hero-shoe-card{margin:0;background:#111;border:1px solid rgba(255,255,255,.28);padding:12px;overflow:hidden}.hero-shoe-card img{display:block;width:100%;height:220px;object-fit:contain;background:#eee}.hero-shoe-card span{display:block;padding:12px 2px 2px;font-size:13px;font-weight:800;letter-spacing:1px}.sneakers-hero .hero-collection-btn{margin-top:24px;align-self:auto;width:auto;display:inline-flex}@media(max-width:800px){.hero-shoes{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.hero-shoe-card{padding:6px}.hero-shoe-card img{height:150px}.hero-shoe-card span{font-size:10px}}@media(max-width:560px){.sneakers-hero{padding:38px 14px 34px}.sneakers-hero h1{font-size:clamp(48px,17vw,76px);letter-spacing:-3px}.hero-shoes{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px}.hero-shoe-card{min-width:78%;scroll-snap-align:start}.hero-shoe-card img{height:210px}.hero-shoe-card span{font-size:12px}}
+/* BOTON CONTACTO HEADER */
+.contact-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:10px 18px;
+  background:#fff;
+  color:#080808;
+  border:1px solid #fff;
+  text-decoration:none;
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:1.1px;
+  transition:border-color .22s ease,box-shadow .22s ease;
+}
+.contact-btn:hover,.contact-btn:focus,.contact-btn:active{
+  background:#fff;
+  color:#080808;
+  border-color:#25D366;
+  box-shadow:0 0 0 1px #25D366,0 0 14px rgba(37,211,102,.24);
+}
+
+/* COMO COMPRAR + FOOTER WORN IN MOTION */
+.how-buy{padding:48px 5%;background:#080808;border-top:1px solid #292929}
+.how-buy h2{margin:0 0 22px;font-size:26px}
+.how-buy-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.how-buy-grid article{min-height:130px;border:1px solid #777;border-radius:12px;padding:22px;background:#0d0d0d;display:flex;flex-direction:column;justify-content:center}
+.how-buy-grid strong{font-size:13px;letter-spacing:.5px}
+.how-buy-grid p{margin:10px 0 0;color:#ccc;line-height:1.5;font-size:14px}
+.store-footer{padding:58px 5% 22px;background:#030303;border-top:1px solid #292929}
+.footer-grid{display:grid;grid-template-columns:1.45fr .8fr 1.15fr .7fr;gap:42px}
+.footer-grid h2{font-size:64px;line-height:.8;margin:0 0 10px}
+.footer-grid h3{margin:0 0 24px;font-size:18px}
+.footer-brand>p{max-width:430px;color:#ccc;line-height:1.65;font-size:14px}
+.footer-grid nav,.footer-grid section{display:flex;flex-direction:column;align-items:flex-start}
+.footer-grid a{color:#fff;text-decoration:none;margin:0 0 18px;line-height:1.35}
+.footer-grid a:hover,.footer-grid a:focus{color:#25D366}
+.footer-grid section>p{color:#ccc;line-height:1.5}
+.footer-copy{margin-top:42px;padding-top:22px;border-top:1px solid #777;text-align:center;color:#ddd}
+@media(max-width:900px){.how-buy-grid{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.how-buy{padding:38px 14px}.how-buy-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory}.how-buy-grid article{min-width:82%;scroll-snap-align:start}.store-footer{padding:44px 18px 20px}.footer-grid{grid-template-columns:1fr;gap:34px}.footer-grid h2{font-size:54px}.footer-copy{text-align:left;font-size:13px}}

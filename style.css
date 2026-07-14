@@ -119,3 +119,21 @@
 .footer-copy{margin-top:42px;padding-top:22px;border-top:1px solid #777;text-align:center;color:#ddd}
 @media(max-width:900px){.how-buy-grid{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:560px){.how-buy{padding:38px 14px}.how-buy-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory}.how-buy-grid article{min-width:82%;scroll-snap-align:start}.store-footer{padding:44px 18px 20px}.footer-grid{grid-template-columns:1fr;gap:34px}.footer-grid h2{font-size:54px}.footer-copy{text-align:left;font-size:13px}}
+
+/* HERO FINAL: MAS COMPACTO Y HORIZONTAL */
+.sneakers-hero{padding-top:34px;padding-bottom:32px}
+.sneakers-hero h1{margin-bottom:16px}
+.hero-shoes{max-width:1050px;margin:0 auto;gap:14px}
+.hero-shoe-card{padding:8px}
+.hero-shoe-card img{height:150px;aspect-ratio:16/9;object-fit:contain}
+.hero-shoe-card span{padding:8px 2px 2px}
+.sneakers-hero .hero-collection-btn{margin-top:18px}
+@media(max-width:800px){
+  .hero-shoe-card img{height:125px}
+}
+@media(max-width:560px){
+  .hero-shoes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));overflow:visible;gap:6px}
+  .hero-shoe-card{min-width:0;padding:4px}
+  .hero-shoe-card img{height:92px;aspect-ratio:16/9}
+  .hero-shoe-card span{font-size:9px;padding-top:6px}
+}

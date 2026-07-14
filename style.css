@@ -241,3 +241,24 @@ html{
     transform:scaleY(0);transform-origin:top;will-change:transform;
   }
 }
+
+/* INDICADOR MOVIL FINAL: PLATEADO, FINO Y DISCRETO */
+@media(max-width:560px){
+  .mobile-scroll-progress{
+    right:3px !important;
+    top:92px !important;
+    bottom:24px !important;
+    width:3px !important;
+    background:rgba(184,184,184,.18) !important;
+    overflow:visible !important;
+  }
+  .mobile-scroll-progress span{
+    width:3px !important;
+    height:44px !important;
+    background:#B8B8B8 !important;
+    border-radius:999px !important;
+    transform:translateY(0);
+    transform-origin:initial !important;
+    box-shadow:0 0 5px rgba(255,255,255,.18);
+  }
+}

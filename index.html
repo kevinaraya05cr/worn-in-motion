@@ -63,7 +63,7 @@ function irASeccion(id){
     if(!thumb)return;
     const max=document.documentElement.scrollHeight-window.innerHeight;
     const progress=max>0?window.scrollY/max:0;
-    thumb.style.transform='scaleY('+Math.max(0,Math.min(1,progress))+')';
+    thumb.style.transform='translateY(calc((100% - 44px) * '+Math.max(0,Math.min(1,progress))+'))';
   }
   window.addEventListener('scroll',updateMobileProgress,{passive:true});
   window.addEventListener('resize',updateMobileProgress);
